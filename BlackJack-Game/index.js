@@ -14,7 +14,12 @@ let sumEl = document.getElementById("sum-el")
 // Store the cards paragraph in a variable called cardsEl
 let cardsEl = document.getElementById("cards-el")
 
+// Create a new function called startGame () that calls renderGame ()
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
     // Render the cars on the page using this format -> "Cards: 10 4"
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
 
@@ -39,4 +44,13 @@ function startGame() {
 
 function newCard() {
     console.log("Drawing a new card from the deck!")
+
+    // Create a card variable, and hard code its value to a number (2-11)
+    let newCard = 7
+    
+    // Add the new card to the sum variable
+    sum += newCard
+
+    // Call startGame()
+    renderGame()
 }
