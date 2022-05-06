@@ -60,6 +60,9 @@ function newCard() {
     // Add the new card to the sum variable
     sum += newCard
 
+    // Push the card to the cards array
+    cards.push(newCard)
+
     // Call startGame()
     renderGame()
 }
