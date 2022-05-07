@@ -21,7 +21,7 @@ let player = {
 // Methods are functions which are attached to objects!
 
 let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
+//playerEl.textContent = player.name + ": $" + player.chips
 
 // Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
