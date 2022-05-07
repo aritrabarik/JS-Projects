@@ -1,5 +1,6 @@
-let firstCard = 10
-let secondCard = 4
+// Use getRandomCard() to set the values of firstCard and secondCard
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 
 // Create a new array - cards - that contains firstCard and secondCard
 let cards = [firstCard, secondCard] // Array - ordered list of items
@@ -17,6 +18,11 @@ let sumEl = document.getElementById("sum-el")
 
 // Store the cards paragraph in a variable called cardsEl
 let cardsEl = document.getElementById("cards-el")
+
+// Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+    return 5
+}
 
 // Create a new function called startGame () that calls renderGame ()
 function startGame() {
@@ -60,10 +66,13 @@ function renderGame() {
 // Create a function newCard() that logs out "Drawing a new card from the deck!"
 
 function newCard() {
-    console.log("Drawing a new card from the deck!")
+    // Use the getRandomCard() to set the value of card
+    let newCard = getRandomCard()
+
+    //console.log("Drawing a new card from the deck!")
 
     // Create a card variable, and hard code its value to a number (2-11)
-    let newCard = 7
+    //let newCard = 7
     
     // Add the new card to the sum variable
     sum += newCard
