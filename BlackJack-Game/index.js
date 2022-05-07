@@ -20,8 +20,19 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 // Create a function, getRandomCard(), that always returns the number 5
+// Make this function return a random number between 1 and 13
 function getRandomCard() {
-    return 5
+    // if 1     -> return 11
+    // if 11-13 -> return 10
+    let randomNumber = Math.floor(Math.random() * 13) + 1
+    
+    if (randomNumber > 10) {
+        return 10
+    } else if (randomNumber === 1) {
+        return 1
+    } else {
+        return randomNumber
+    }
 }
 
 // Create a new function called startGame () that calls renderGame ()
