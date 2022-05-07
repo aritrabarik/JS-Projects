@@ -18,6 +18,8 @@ let player = {
     chips: 145
 }
 
+// Methods are functions which are attached to objects!
+
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips
 
