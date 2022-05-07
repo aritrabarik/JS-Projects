@@ -42,6 +42,7 @@ function getRandomCard() {
 function startGame() {
     // Generate two random numbes
     // Re-assign the cards and sum variables so that the game can start
+    isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
@@ -86,20 +87,23 @@ function renderGame() {
 // Create a function newCard() that logs out "Drawing a new card from the deck!"
 
 function newCard() {
-    // Use the getRandomCard() to set the value of card
-    let newCard = getRandomCard()
+    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+    if (isAlive === true && hasBlackJack === false) {
+        // Use the getRandomCard() to set the value of card
+        let card = getRandomCard()
 
-    //console.log("Drawing a new card from the deck!")
+        //console.log("Drawing a new card from the deck!")
 
-    // Create a card variable, and hard code its value to a number (2-11)
-    //let newCard = 7
-    
-    // Add the new card to the sum variable
-    sum += newCard
+        // Create a card variable, and hard code its value to a number (2-11)
+        //let card = 7
+        
+        // Add the new card to the sum variable
+        sum += card
 
-    // Push the card to the cards array
-    cards.push(newCard)
+        // Push the card to the cards array
+        cards.push(card)
 
-    // Call startGame()
-    renderGame()
+        // Call startGame()
+        renderGame()
+    }
 }
