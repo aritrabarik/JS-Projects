@@ -1,13 +1,16 @@
 // Use getRandomCard() to set the values of firstCard and secondCard
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
+// let firstCard = getRandomCard()
+// let secondCard = getRandomCard()
 
 // Create a new array - cards - that contains firstCard and secondCard
-let cards = [firstCard, secondCard] // Array - ordered list of items
+// let cards = [firstCard, secondCard] // Array - ordered list of items
 
-let sum = firstCard + secondCard
+// let sum = firstCard + secondCard
+
+let cards = []
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
 let message = ""
 
 // Store the message-el paragraph in a variable called messageEl
@@ -37,6 +40,12 @@ function getRandomCard() {
 
 // Create a new function called startGame () that calls renderGame ()
 function startGame() {
+    // Generate two random numbes
+    // Re-assign the cards and sum variables so that the game can start
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
     renderGame()
 }
 
