@@ -14,8 +14,12 @@ inputBtn.addEventListener('click', function () {
 
 let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
 
-// Render the leads in the unordered list using ulEl.textContent
+// Create a variable, listItems, to hold all the HTML for the list items
+// Assign it to an empty string to begin with
+let listItems = ""
 for (let i = 0; i < myLeads.length; i++) {
-    ulEl.textContent += myLeads[i] + " "
+    // Add the item to the listItems variable instead of the ulEl.innerHTML
+    listItems += "<li>" + myLeads[i] + "</li>"
 }
-
+// Render the listItems inside the unordered list using ulEl.innerHTML
+ulEl.innerHTML = listItems
