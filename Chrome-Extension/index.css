@@ -11,6 +11,11 @@ input {
     border: 1px solid #5f9341;
 }
 
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #5f9341;
+}
+
 button {
     background: #5f9341;
     color: whitesmoke;
