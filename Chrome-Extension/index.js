@@ -27,7 +27,14 @@ function renderLeads() {
         // Add the item to the listItems variable instead of the ulEl.innerHTML
         // Wrap the lead in an anchor tag (<a>) inside the <li>
         // Can you make the link open in a new tab?
-        listItems += "<li><a href='" + myLeads[i] + "' target = '_blank'>" + myLeads[i] + "</a></li>"
+        
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+        `
     }
     
     // Render the listItems inside the unordered list using ulEl.innerHTML
