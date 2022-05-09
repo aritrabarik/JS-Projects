@@ -1,6 +1,12 @@
-// Log out "Button clicked!" when the user clicks the "SAVE INPUT" button
-
-let inputBtn = document.getElementById("input-btn")
+const inputBtn = document.getElementById("input-btn")
 inputBtn.addEventListener('click', function () {
-    console.log("Button clicked from addEventListener attribute!")
+    // Push the value from the inputEl into the myLeads array
+    // instead of the hard-coded "www.awesomeleads.com" value
+    // Google -> "get value from input field javascript"
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
 })
+
+let myLeads = []
+
+const inputEl = document.getElementById("input-el")
