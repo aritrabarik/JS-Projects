@@ -14,7 +14,7 @@ input {
 button {
     background: #5f9341;
     color: whitesmoke;
-    margin-top: 5px;
+    margin-top: 20px;
     padding: 10px 20px;
     border: none;
     font-weight: bold;
@@ -27,7 +27,7 @@ ul {
 }
 
 li {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 a {
