@@ -1,3 +1,4 @@
+let myLeads = []
 const inputBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el")
 
@@ -9,17 +10,21 @@ inputBtn.addEventListener('click', function () {
     // instead of the hard-coded "www.awesomeleads.com" value
     // Google -> "get value from input field javascript"
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    
+    // Call the renderLeads() function
+    renderLeads()
 })
 
-let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
-
-// Create a variable, listItems, to hold all the HTML for the list items
-// Assign it to an empty string to begin with
-let listItems = ""
-for (let i = 0; i < myLeads.length; i++) {
-    // Add the item to the listItems variable instead of the ulEl.innerHTML
-    listItems += "<li>" + myLeads[i] + "</li>"
+function renderLeads() {
+    // Wrap the code below in a renderLeads() function
+    // Create a variable, listItems, to hold all the HTML for the list items
+    // Assign it to an empty string to begin with
+    let listItems = ""
+    for (let i = 0; i < myLeads.length; i++) {
+        // Add the item to the listItems variable instead of the ulEl.innerHTML
+        listItems += "<li>" + myLeads[i] + "</li>"
+    }
+    
+    // Render the listItems inside the unordered list using ulEl.innerHTML
+    ulEl.innerHTML = listItems
 }
-// Render the listItems inside the unordered list using ulEl.innerHTML
-ulEl.innerHTML = listItems
