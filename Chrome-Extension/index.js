@@ -11,6 +11,9 @@ inputBtn.addEventListener('click', function () {
     // Google -> "get value from input field javascript"
     myLeads.push(inputEl.value)
     
+    // Clear out the input field
+    inputEl.value = ""
+
     // Call the renderLeads() function
     renderLeads()
 })
