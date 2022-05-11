@@ -2,6 +2,8 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 
+console.log(localStorage.getItem("myLinks"))
+
 // Grab the unordered list and store it in a const variable called ulEl
 const ulEl = document.getElementById("ul-el")
 
