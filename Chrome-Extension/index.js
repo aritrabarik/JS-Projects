@@ -2,7 +2,23 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 
-console.log(localStorage.getItem("myLinks"))
+// 1. Save a key-value pair in localStorage
+// localStorage.setItem("myName", "Aritra Barik")
+
+// 2. Refresh the page. Get the value and log it to the console
+let name = localStorage.getItem("myName")
+console.log(name)
+
+// 3. Clear localStorage
+// localStorage.clear()
+
+// HINTS:
+// localStorage.setItem(key, value)
+// localStorage.getItem(key)
+// localStorage.clear()
+// PS: both key and value need to be strings
+
+
 
 // Grab the unordered list and store it in a const variable called ulEl
 const ulEl = document.getElementById("ul-el")
